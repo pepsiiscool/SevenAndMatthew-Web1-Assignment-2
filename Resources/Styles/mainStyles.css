@@ -1,0 +1,151 @@
+
+
+
+ html {
+    color: #174240; 
+   
+  }
+  main  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #faf8ef;
+  }
+
+.contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 10px;
+        margin: 0px 50px 0px 50px;
+        
+        
+
+    }
+    .contents p {
+        font-size: 150%;
+    }
+.contents > div {
+    margin-top: 18px;
+    background-color: rgb(3, 104, 172);
+    color:#faf8ef;
+    
+  }
+
+header {
+    background-color: rgb(3, 104, 172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    color: #faf8ef;
+  }
+  header nav a{
+    display: flex;
+    gap: 16px;
+    color:rgb(255, 255, 255);
+    float: right;
+    margin: 0px 10px 0px 10px;
+  }
+  header div {
+    display: flex;
+    gap: 16px;
+  }
+  /* header div img {
+    
+  } */
+  h3 {
+    align-items: center;
+    font-size: 1.5em;
+    grid-row-start: 1fr;
+    grid-row-end: 1fr;
+    text-align: center;
+    grid-row-start: 1;
+    
+    
+  }
+  img {
+    display: flex;
+    margin: auto;
+    text-align: center;
+  }
+    figcaption {
+        text-align: center;
+    }
+    form {
+        width : 75%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 1.0rem;
+        
+    }
+    footer {
+      background-color: rgb(3, 104, 172);
+      color: white
+    }
+
+
+ /*------------------------------------------------------------------*/
+ @media only screen and (max-width: 480px) {
+
+  main{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 10%;
+      justify-content: center;
+
+    }
+    
+    
+    .item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color:beige
+    }
+    
+    .headerBlockContainer{
+
+      display: flex;
+      justify-content:flex-end;
+      width: 100%;
+      background-color: rgb(166, 158, 174);
+      
+      }
+
+      .headerBlockContainer  a{
+          display: inline-flex;
+          margin-right: 10px;
+         justify-content: center;
+          
+          }
+
+    
+  
+
+  }
+@media only screen and (min-device-width: 790px) {
+    body {
+      max-width: 790px;
+      margin: auto;
+    }
+    main {
+      max-width: 790px;
+      margin: auto;
+    }
+    img {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      
+      text-align: center;
+  }
+}
+  
+
+

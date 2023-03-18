@@ -1,0 +1,158 @@
+/* html {
+    display: grid;
+
+  } */
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; 
+    grid-gap: 10px;
+    justify-content: center;
+    background-color: #faf8ef;
+    /* background-color: dodgerblue; */
+  }
+  
+  
+  .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:beige
+  }
+
+  header {
+    background-color: rgb(3, 104, 172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    color: #faf8ef;
+  }
+  header nav a{
+    display: flex;
+    gap: 16px;
+    color:rgb(255, 255, 255);
+    float: right;
+    margin: 0px 10px 0px 10px;
+  }
+  header div {
+    display: flex;
+    gap: 16px;
+  }
+
+
+.headerBlockContainer{
+
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+    background-color: rgb(166, 158, 174);
+    
+    }
+    
+    .headerBlockContainer  a{
+    display: inline-flex;
+    margin-right: 10px;
+    /* background-color: blue; */
+    
+    }
+    
+ 
+
+    .headerLogoContainer {
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    .headerLogoContainer img{
+        display: flex;
+        align-items: center;
+    }
+    .headerLogoContainer a{
+        display: inline-flex;
+        margin-left: 10px;
+        /* background-color: blueviolet; */
+    }
+
+
+
+    .footerBlockContainer{
+
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      color: white;
+      background-color: rgb(3, 104, 172);
+      
+      }
+      h1 {
+
+        font-size: 2.5em;
+        font-weight: 600;
+        color: rgb(3, 104, 172);
+        text-align: center;
+      }
+        
+      
+    
+
+
+
+
+/* block level code  is the container (Container moves/acts how  you choose it to)*/ 
+/* inline  elements (inline-flex) is the inline items  you want to change in the container.*/
+
+/*----------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10%;
+        justify-content: center;
+
+      }
+      
+      
+      .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:beige
+      }
+      
+      .headerBlockContainer{
+
+        display: flex;
+        justify-content:flex-end;
+        width: 100%;
+        background-color: rgb(166, 158, 174);
+        
+        }
+
+        .headerBlockContainer  a{
+            display: inline-flex;
+            margin-right: 10px;
+           justify-content: center;
+            
+            }
+
+      
+    
+
+    }
+@media only screen and (min-device-width: 790px) {
+      body {
+        max-width: 790px;
+        margin: auto;
+      }
+      main {
+        max-width: 790px;
+        margin: auto;
+      }
+    }
+    

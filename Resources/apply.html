@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Authors: Seven Mason and Matthew Mccusker" />
+    <meta name="description" content="Artificial Insight is a website about Artificial Intelligence (AI) and its applications in various industries." />
+    <meta name="keywords" content="artificial intelligence, AI, machine learning, technology, innovation" />
+    <meta name="date" content="2023-03-16" />
+    <link rel="stylesheet" href="Styles/applyStyles.css" />
+    <title>Apply Now</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="apply.html">Apply Now</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div>
+        <img src="../images/ArtificalInsight.png" title="Artificial Insight" alt="Artificial Insight Logo" />
+      </div>
+    </header>
+    <main>
+    <div>
+      <h1>Employment Application</h1>
+    </div>
+    <!--This form takes the application information from our user-->
+    <form action="mailto:name@email.com" enctype="multipart/form-data" method="post" class="center form">
+      <fieldset class="item">
+        <legend>Application Information</legend>
+        <dl>
+          <dt>Position</dt>
+          <dd>
+            <!--lets the user select the position they're applying for-->
+            <select name="Position">
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Data Scientist">Data Scientist</o  ption>
+              <option value="Data Analyst">Data Analyst</option>
+              <option value="Data Engineer">Data Engineer</option>
+              <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+              <option value="Data Security Engineer">Data Security Engineer</option>
+              <option value="Data Management Engineer">Data Management Engineer</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>LinkedIn Profile</dt>
+          <dd>
+            <!--Makes the user enter their LinkedIn Profile-->
+            <input
+              type="text"
+              name="LinkedIn"
+              size="30"
+              maxlength="50"
+              placeholder="LinkedIn Profile"
+              required
+            />
+          </dd>
+        </dl>
+        <dl>
+          <dt>Resume (jpeg or png)</dt>
+
+          <dd>
+            <!--This is a file upload for the user to upload their resume-->
+            <input type="file" name="Resume" accept=".jpg, .jpeg, .png" />
+          </dd>
+        </dl>
+        <dl>
+          <dt>Are You Currently a Canadian Citizen?</dt>
+          <dd>
+            <input type="radio" id="butOne" name="choice" />
+            <label for="butOne">Yes</label>
+            <input type="radio" id="butTwo" name="choice" />
+            <label for="butTwo">No</label>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Requirements:</dt>
+          <dd>
+            <input type="checkbox" id="butThree" name="choice" />
+            <label for="butThree">I am authorized to work in Canada</label>
+          </dd>
+          <dd>
+            <input type="checkbox" id="butFour" name="choice" />
+            <label for="butFour"
+              >I am of the age of the majority in Alberta</label
+            >
+          </dd>
+        </dl>
+        <dl>
+          <dt>Current date</dt>
+          <dd>
+            <input type="date" name="date" size="30" />
+          </dd>
+        </dl>
+      </fieldset>
+
+      <!--This will let the user enter personal information for the application-->
+      <fieldset class="item">
+        <legend>Personal Information</legend>
+        <dl>
+          <dt>Name</dt>
+          <dd>
+            <input
+              required="required"
+              type="text"
+              name="First"
+              size="30"
+              maxlength="20"
+              placeholder="First"
+            />
+          </dd>
+          <dd>
+            <input
+              type="text"
+              name="Last"
+              size="30"
+              maxlength="100"
+              placeholder="Last"
+            />
+          </dd>
+        </dl>
+        <dl>
+
+          <dt>Email</dt>
+          <dd>
+            <input
+              type="email"
+              name="Email"
+              placeholder="name@gmail.com"
+              id="email"
+              size="30"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+          </dd>
+          </dl>
+          <dl>
+
+          <dt>Phone (optional)</dt>
+          <dd>
+            <input
+              type="tel"
+              name="phone #"
+              id="phone"
+              placeholder="123-456-7890"
+              size="30"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+          </dd>
+        </dl>
+          <input type="submit" value="submit" /><input
+            type="reset"
+            value="reset"
+          />
+        
+      </fieldset>
+    </form>
+  </main>
+    <footer class="footerBlockContainer">
+      <small>&copy;Matthew McCusker&Seven Mason Feb. 12, 2023,</small>
+    </footer>
+
+  </body>
+  
+
+
+</html>
